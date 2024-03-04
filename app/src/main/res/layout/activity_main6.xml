@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity6">
+
+    <TextView
+        android:id="@+id/text13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="28dp"
+        android:text="Question # 5"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tex14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tex14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginBottom="35dp"
+        android:text="Which of the following was NOT Greek?"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup5"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup5"
+        app:layout_constraintTop_toBottomOf="@+id/text13" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup5"
+        android:layout_width="363dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="83dp"
+        app:layout_constraintBottom_toTopOf="@+id/SubmBtn4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tex14">
+
+        <RadioButton
+            android:id="@+id/radioBtn18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Homer" />
+
+        <RadioButton
+            android:id="@+id/radioBtn19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Herodotus" />
+
+        <RadioButton
+            android:id="@+id/radioBtn20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Virgil" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/SubmBtn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="321dp"
+        android:onClick="clicker"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
